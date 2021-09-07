@@ -1,0 +1,23 @@
+<div class="container my-5">
+    <form class="row g-3" [formGroup]="addblog" (ngSubmit)="submit()">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Title</label>
+            <input type="text" class="form-control" id="inputEmail4" formControlName="title">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Author</label>
+            <input type="text" class="form-control" id="inputPassword4" formControlName="author">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Descriprtion</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Description" formControlName="short_desc">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Image</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="url" formControlName="image">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Add Blog</button>
+        </div>
+    </form>
+</div>

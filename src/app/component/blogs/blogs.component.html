@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let blog of blogData">
+      <div class="card h-100">
+        <img src="{{blog.image}}" class="card-img-top" alt="..." style="width: 100%;height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <p class="card-text">{{blog.short_desc}}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{blog.author}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
